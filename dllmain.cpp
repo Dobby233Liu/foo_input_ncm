@@ -1,0 +1,1 @@
+﻿// main.cpp left for declares
