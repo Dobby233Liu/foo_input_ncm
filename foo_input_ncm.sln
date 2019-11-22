@@ -120,8 +120,8 @@ Global
 		{EBFFFB4E-261D-44D3-B89C-957B31A0BF9C}.Release FB2K|x86.Build.0 = Release FB2K|Win32
 		{EBFFFB4E-261D-44D3-B89C-957B31A0BF9C}.Release|x64.ActiveCfg = Release|x64
 		{EBFFFB4E-261D-44D3-B89C-957B31A0BF9C}.Release|x64.Build.0 = Release|x64
-		{EBFFFB4E-261D-44D3-B89C-957B31A0BF9C}.Release|x86.ActiveCfg = Release|Win32
-		{EBFFFB4E-261D-44D3-B89C-957B31A0BF9C}.Release|x86.Build.0 = Release|Win32
+		{EBFFFB4E-261D-44D3-B89C-957B31A0BF9C}.Release|x86.ActiveCfg = Release FB2K|Win32
+		{EBFFFB4E-261D-44D3-B89C-957B31A0BF9C}.Release|x86.Build.0 = Release FB2K|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
