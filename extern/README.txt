@@ -1,0 +1,1 @@
+NOTE: Please apply the "fb2k-vs16-fixes.patch" patch to the "fb2k" submodule to at least make FB2K SDK work.

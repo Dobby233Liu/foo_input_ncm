@@ -1,0 +1,248 @@
+diff --git a/foobar2000/SDK/foobar2000_SDK.vcxproj b/foobar2000/SDK/foobar2000_SDK.vcxproj
+index 9e8faf1..0320d63 100644
+--- a/foobar2000/SDK/foobar2000_SDK.vcxproj
++++ b/foobar2000/SDK/foobar2000_SDK.vcxproj
+@@ -13,6 +13,7 @@
+   <PropertyGroup Label="Globals">
+     <ProjectGuid>{E8091321-D79D-4575-86EF-064EA1A4A20D}</ProjectGuid>
+     <RootNamespace>foobar2000_SDK</RootNamespace>
++    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+   </PropertyGroup>
+   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+@@ -20,13 +21,13 @@
+     <UseOfMfc>false</UseOfMfc>
+     <CharacterSet>Unicode</CharacterSet>
+     <WholeProgramOptimization>true</WholeProgramOptimization>
+-    <PlatformToolset>v141_xp</PlatformToolset>
++    <PlatformToolset>v142</PlatformToolset>
+   </PropertyGroup>
+   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+     <ConfigurationType>StaticLibrary</ConfigurationType>
+     <UseOfMfc>false</UseOfMfc>
+     <CharacterSet>Unicode</CharacterSet>
+-    <PlatformToolset>v141_xp</PlatformToolset>
++    <PlatformToolset>v142</PlatformToolset>
+   </PropertyGroup>
+   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+   <ImportGroup Label="ExtensionSettings">
+@@ -55,6 +56,7 @@
+       <TreatSpecificWarningsAsErrors>4715</TreatSpecificWarningsAsErrors>
+       <MultiProcessorCompilation>true</MultiProcessorCompilation>
+       <EnableEnhancedInstructionSet>NoExtensions</EnableEnhancedInstructionSet>
++      <AdditionalIncludeDirectories>$(SolutionDir)extern\wtl\Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+     </ClCompile>
+     <ResourceCompile>
+       <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+@@ -84,6 +86,7 @@
+       <MultiProcessorCompilation>true</MultiProcessorCompilation>
+       <OmitFramePointers>true</OmitFramePointers>
+       <IntrinsicFunctions>true</IntrinsicFunctions>
++      <AdditionalIncludeDirectories>$(SolutionDir)extern\wtl\Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+     </ClCompile>
+     <ResourceCompile>
+       <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+diff --git a/foobar2000/foo_sample/foo_sample.vcxproj b/foobar2000/foo_sample/foo_sample.vcxproj
+index 2ff7b01..659fb08 100644
+--- a/foobar2000/foo_sample/foo_sample.vcxproj
++++ b/foobar2000/foo_sample/foo_sample.vcxproj
+@@ -14,18 +14,19 @@
+     <ProjectGuid>{85FBFD09-0099-4FE9-9DB6-78DB6F60F817}</ProjectGuid>
+     <RootNamespace>foo_input_raw</RootNamespace>
+     <Keyword>Win32Proj</Keyword>
++    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+   </PropertyGroup>
+   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+     <ConfigurationType>DynamicLibrary</ConfigurationType>
+     <CharacterSet>Unicode</CharacterSet>
+     <WholeProgramOptimization>true</WholeProgramOptimization>
+-    <PlatformToolset>v141_xp</PlatformToolset>
++    <PlatformToolset>v142</PlatformToolset>
+   </PropertyGroup>
+   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+     <ConfigurationType>DynamicLibrary</ConfigurationType>
+     <CharacterSet>Unicode</CharacterSet>
+-    <PlatformToolset>v141_xp</PlatformToolset>
++    <PlatformToolset>v142</PlatformToolset>
+   </PropertyGroup>
+   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+   <ImportGroup Label="ExtensionSettings">
+diff --git a/foobar2000/foobar2000_component_client/foobar2000_component_client.vcxproj b/foobar2000/foobar2000_component_client/foobar2000_component_client.vcxproj
+index 1805416..5b6e6ab 100644
+--- a/foobar2000/foobar2000_component_client/foobar2000_component_client.vcxproj
++++ b/foobar2000/foobar2000_component_client/foobar2000_component_client.vcxproj
+@@ -13,6 +13,7 @@
+   <PropertyGroup Label="Globals">
+     <ProjectGuid>{71AD2674-065B-48F5-B8B0-E1F9D3892081}</ProjectGuid>
+     <RootNamespace>foobar2000_component_client</RootNamespace>
++    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+   </PropertyGroup>
+   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+@@ -20,13 +21,13 @@
+     <UseOfMfc>false</UseOfMfc>
+     <CharacterSet>Unicode</CharacterSet>
+     <WholeProgramOptimization>true</WholeProgramOptimization>
+-    <PlatformToolset>v141_xp</PlatformToolset>
++    <PlatformToolset>v142</PlatformToolset>
+   </PropertyGroup>
+   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+     <ConfigurationType>StaticLibrary</ConfigurationType>
+     <UseOfMfc>false</UseOfMfc>
+     <CharacterSet>Unicode</CharacterSet>
+-    <PlatformToolset>v141_xp</PlatformToolset>
++    <PlatformToolset>v142</PlatformToolset>
+   </PropertyGroup>
+   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+   <ImportGroup Label="ExtensionSettings">
+@@ -58,6 +59,7 @@
+       <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+       <TreatSpecificWarningsAsErrors>4715</TreatSpecificWarningsAsErrors>
+       <EnableEnhancedInstructionSet>NoExtensions</EnableEnhancedInstructionSet>
++      <AdditionalIncludeDirectories>$(SolutionDir)extern\wtl\Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+     </ClCompile>
+     <ResourceCompile>
+       <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+@@ -83,6 +85,7 @@
+       <AdditionalOptions>/d2notypeopt %(AdditionalOptions)</AdditionalOptions>
+       <TreatSpecificWarningsAsErrors>4715</TreatSpecificWarningsAsErrors>
+       <OmitFramePointers>true</OmitFramePointers>
++      <AdditionalIncludeDirectories>$(SolutionDir)extern\wtl\Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+     </ClCompile>
+     <ResourceCompile>
+       <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+diff --git a/foobar2000/helpers/foobar2000_sdk_helpers.vcxproj b/foobar2000/helpers/foobar2000_sdk_helpers.vcxproj
+index 116184a..6f225cc 100644
+--- a/foobar2000/helpers/foobar2000_sdk_helpers.vcxproj
++++ b/foobar2000/helpers/foobar2000_sdk_helpers.vcxproj
+@@ -13,20 +13,21 @@
+   <PropertyGroup Label="Globals">
+     <ProjectGuid>{EE47764E-A202-4F85-A767-ABDAB4AFF35F}</ProjectGuid>
+     <RootNamespace>foobar2000_sdk_helpers</RootNamespace>
++    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+   </PropertyGroup>
+   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+     <ConfigurationType>StaticLibrary</ConfigurationType>
+     <UseOfMfc>false</UseOfMfc>
+     <CharacterSet>Unicode</CharacterSet>
+-    <PlatformToolset>v141_xp</PlatformToolset>
++    <PlatformToolset>v142</PlatformToolset>
+   </PropertyGroup>
+   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+     <ConfigurationType>StaticLibrary</ConfigurationType>
+     <UseOfMfc>false</UseOfMfc>
+     <CharacterSet>Unicode</CharacterSet>
+     <WholeProgramOptimization>true</WholeProgramOptimization>
+-    <PlatformToolset>v141_xp</PlatformToolset>
++    <PlatformToolset>v142</PlatformToolset>
+   </PropertyGroup>
+   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+   <ImportGroup Label="ExtensionSettings">
+@@ -56,7 +57,7 @@
+       <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+       <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+       <EnableEnhancedInstructionSet>NoExtensions</EnableEnhancedInstructionSet>
+-      <AdditionalIncludeDirectories>../..</AdditionalIncludeDirectories>
++      <AdditionalIncludeDirectories>$(SolutionDir)extern\wtl\Include;../..</AdditionalIncludeDirectories>
+       <AdditionalOptions>/d2notypeopt %(AdditionalOptions)</AdditionalOptions>
+       <TreatSpecificWarningsAsErrors>4715</TreatSpecificWarningsAsErrors>
+       <MultiProcessorCompilation>true</MultiProcessorCompilation>
+@@ -81,7 +82,7 @@
+       <SuppressStartupBanner>true</SuppressStartupBanner>
+       <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+       <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+-      <AdditionalIncludeDirectories>../..</AdditionalIncludeDirectories>
++      <AdditionalIncludeDirectories>$(SolutionDir)extern\wtl\Include;../..</AdditionalIncludeDirectories>
+       <TreatSpecificWarningsAsErrors>4715</TreatSpecificWarningsAsErrors>
+       <MultiProcessorCompilation>true</MultiProcessorCompilation>
+       <EnableEnhancedInstructionSet>NoExtensions</EnableEnhancedInstructionSet>
+diff --git a/libPPUI/libPPUI.vcxproj b/libPPUI/libPPUI.vcxproj
+index 5715291..953cc21 100644
+--- a/libPPUI/libPPUI.vcxproj
++++ b/libPPUI/libPPUI.vcxproj
+@@ -23,18 +23,19 @@
+     <ProjectGuid>{7729EB82-4069-4414-964B-AD399091A03F}</ProjectGuid>
+     <Keyword>Win32Proj</Keyword>
+     <RootNamespace>libPPUI</RootNamespace>
++    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+   </PropertyGroup>
+   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+     <ConfigurationType>StaticLibrary</ConfigurationType>
+     <UseDebugLibraries>true</UseDebugLibraries>
+-    <PlatformToolset>v141_xp</PlatformToolset>
++    <PlatformToolset>v142</PlatformToolset>
+     <CharacterSet>Unicode</CharacterSet>
+   </PropertyGroup>
+   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+     <ConfigurationType>StaticLibrary</ConfigurationType>
+     <UseDebugLibraries>false</UseDebugLibraries>
+-    <PlatformToolset>v141_xp</PlatformToolset>
++    <PlatformToolset>v142</PlatformToolset>
+     <WholeProgramOptimization>true</WholeProgramOptimization>
+     <CharacterSet>Unicode</CharacterSet>
+   </PropertyGroup>
+@@ -126,7 +127,7 @@
+       <IntrinsicFunctions>true</IntrinsicFunctions>
+       <PreprocessorDefinitions>_WIN32_WINNT=0x501;WIN32;NDEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+       <RuntimeTypeInfo>false</RuntimeTypeInfo>
+-      <AdditionalIncludeDirectories>..</AdditionalIncludeDirectories>
++      <AdditionalIncludeDirectories>$(SolutionDir)extern\wtl\Include;..</AdditionalIncludeDirectories>
+       <MultiProcessorCompilation>true</MultiProcessorCompilation>
+       <TreatSpecificWarningsAsErrors>4715</TreatSpecificWarningsAsErrors>
+       <BufferSecurityCheck>false</BufferSecurityCheck>
+diff --git a/pfc/pfc.vcxproj b/pfc/pfc.vcxproj
+index 800311b..35ab3f9 100644
+--- a/pfc/pfc.vcxproj
++++ b/pfc/pfc.vcxproj
+@@ -37,6 +37,7 @@
+   <PropertyGroup Label="Globals">
+     <ProjectGuid>{EBFFFB4E-261D-44D3-B89C-957B31A0BF9C}</ProjectGuid>
+     <RootNamespace>pfc</RootNamespace>
++    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+   </PropertyGroup>
+   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+@@ -44,14 +45,14 @@
+     <UseOfMfc>false</UseOfMfc>
+     <CharacterSet>Unicode</CharacterSet>
+     <WholeProgramOptimization>true</WholeProgramOptimization>
+-    <PlatformToolset>v141_xp</PlatformToolset>
++    <PlatformToolset>v142</PlatformToolset>
+   </PropertyGroup>
+   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release FB2K|Win32'" Label="Configuration">
+     <ConfigurationType>StaticLibrary</ConfigurationType>
+     <UseOfMfc>false</UseOfMfc>
+     <CharacterSet>Unicode</CharacterSet>
+     <WholeProgramOptimization>true</WholeProgramOptimization>
+-    <PlatformToolset>v141_xp</PlatformToolset>
++    <PlatformToolset>v142</PlatformToolset>
+   </PropertyGroup>
+   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+     <ConfigurationType>StaticLibrary</ConfigurationType>
+@@ -71,13 +72,13 @@
+     <ConfigurationType>StaticLibrary</ConfigurationType>
+     <UseOfMfc>false</UseOfMfc>
+     <CharacterSet>Unicode</CharacterSet>
+-    <PlatformToolset>v141_xp</PlatformToolset>
++    <PlatformToolset>v142</PlatformToolset>
+   </PropertyGroup>
+   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug FB2K|Win32'" Label="Configuration">
+     <ConfigurationType>StaticLibrary</ConfigurationType>
+     <UseOfMfc>false</UseOfMfc>
+     <CharacterSet>Unicode</CharacterSet>
+-    <PlatformToolset>v141_xp</PlatformToolset>
++    <PlatformToolset>v142</PlatformToolset>
+   </PropertyGroup>
+   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+     <ConfigurationType>StaticLibrary</ConfigurationType>
+@@ -244,6 +245,7 @@
+       <MultiProcessorCompilation>true</MultiProcessorCompilation>
+       <OmitFramePointers>true</OmitFramePointers>
+       <EnableEnhancedInstructionSet>NoExtensions</EnableEnhancedInstructionSet>
++      <AdditionalIncludeDirectories>$(SolutionDir)extern\wtl\Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+     </ClCompile>
+     <ResourceCompile>
+       <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
