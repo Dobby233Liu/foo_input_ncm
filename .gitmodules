@@ -1,0 +1,3 @@
+[submodule "extern/fb2k"]
+	path = extern/fb2k
+	url = https://github.com/reupen/foobar2000-sdk-unmodified.git
